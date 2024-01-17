@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login and Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Login Form</h2>
+    <form id="loginForm" action="/submit_login" >
+        <label for="loginEmail">Email:</label>
+        <br>
+        <input type="email" id="loginEmail" name="loginEmail">
+        <br>
+        <label for="loginPassword">Password:</label>
+        <br>
+        <input type="password" id="loginPassword" name="loginPassword">
+        <br>
+        <input type="submit" value="Login">
+    </form>
+    <button onclick="document.getElementById('registrationForm').style.display='block';">Register</button>
+    <form id="registrationForm" action="/submit_registration" style="display: none;">
+        <label for="regFname">First Name:</label>
+        <br>
+        <input type="text" id="regFname" name="regFname"> 
+        <br>
+        <label for="regLname">Last Name:</label>
+        <br>
+        <input type="text" id="regLname" name="regLname">
+        <br>
+        <label for="regEmail">Email:</label>
+        <br>
+        <input type="email" id="regEmail" name="regEmail">
+        <br>
+        <label for="regPassword">Password:</label>
+        <br>
+        <input type="password" id="regPassword" name="regPassword"><br>
+        <label for="regDob">Date of Birth:</label>
+        <br>
+        <input type="date" id="regDob" name="regDob">
+        <br>
+        <label for="regPhone">Phone Number:</label>
+        <br>
+        <input type="tel" id="regPhone" name="regPhone">
+        <br>
+        <label for="cars">Choose a city:</label>
+            <select id="city" name="city">
+                <option value="noida">Noida</option>
+                <option value="Gnoida">Greater Noida</option>
+                <option value="delhi">Delhi</option>
+            </select>
+        <input type="submit" value="Register" style="margin-top: 10px;">
+    </form>
+</body>
+</html>
